@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Papier kamień nożyce</h1>
+        <h2>Wybierz</h2>
+
+        <div class="images">
+            <img data-option="papier" src="papier.jpg" alt="" title="papier">
+            <img data-option="nożyce" src="nożyce.jpg" alt="" title="papier">
+            <img data-option="kamień" src="kamień.jpg" alt="" title="papier">
+        </div>
+
+        <button>Graj</button>
+
+        <section class="numbers">
+            <div class="result">
+                <h3>Wynik</h3>
+                <p>Ty: <span data-summary="your-choice"></span></p>
+                <p>Komputer: <span data-summary="ai-choice"></span></p>
+                <h2>Zwycięzca: <span data-summary="who-win"></span></h2>
+            </div>
+
+            <div class="summary">
+                <h3>Podsumowanie</h3>
+                <p class="numbers">Liczba gier: <span></span></p>
+                <p class="wins">Wygrane: <span></span></p>
+                <p class="losses">Przegrane: <span></span></p>
+                <p class="draws">Remisy: <span></span></p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
